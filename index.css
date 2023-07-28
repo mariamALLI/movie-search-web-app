@@ -20,7 +20,6 @@ body {
 header,
 main {
     width: 24rem;
-
 }
 
 header {
@@ -29,10 +28,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.header {
-
 }
 
 .link-pg .movie_link  {
@@ -46,8 +41,12 @@ header {
 }
 
 .header-flex,
-.searchbarbtnflex {
+.searchbarbtnflex,
+.header_flex{
     text-align: center;
+}
+.header_flex{
+    margin-top: 4rem;
 }
 
 .search-bar {
@@ -74,14 +73,11 @@ header {
     left: 0.5rem;
 }
 
-button {
+.search-btn {
     padding: 0.3rem 2rem;
     border-radius: 10px;
     cursor: pointer;
     border: none;
-}
-
-.search-btn {
     background-color: #4B4B4B;
     color: #fff;
 }
@@ -97,11 +93,63 @@ main {
 
 .film-tape-icon {
     width: 200px;
-    position: absolute;
-    top: 30rem;
-    left: 6rem;
+    top: 20rem;
+    left: 3rem;
 }
 
+#txt-hidden {
+    display: none;
+}
+
+#watchlisttxt {
+    display: block;
+}
+
+.film-tape-icon,
+.film-txt {
+    position: absolute;
+   
+}
+
+.film-txt {
+    color: #787878;
+    padding: 0rem 0.5rem;
+    text-align: center;
+    top: 30rem;
+    left: 2rem;
+}
+
+.addmoviebtntxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 19rem;
+}
+
+.movie-poster {
+    width: 100%;
+}
+
+.movie_container {
+    text-align: center;
+}
+
+.watchlistbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.movie_list_flex {
+    border-bottom: 2px solid #4B4B4B;
+    margin-bottom: 30px;
+}
+
+.plot {
+    margin-bottom: 20px;
+}
 
 @media (min-width: 800px){
 
@@ -153,5 +201,10 @@ main {
         position: absolute;
         top: 36rem;
         left: 40rem;
+    }
+
+    .film-txt {
+        left: 33rem;
+        top: 33rem;
     }
 }
