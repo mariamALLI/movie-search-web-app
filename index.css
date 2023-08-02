@@ -238,8 +238,8 @@ main {
     }
 
     .movie-poster {
-        width: 30%;
-        height: 50vh;
+        width: 35%;
+        margin-bottom: 2rem;
     }
 
     .first_txt_flx {
@@ -279,9 +279,8 @@ main {
     }
 
     .plot {
-        padding: 2rem;
+        padding: 0.5rem;
         text-align: left;
-        margin-top: -1rem;
     }
 
     .addmoviebtntxt {
