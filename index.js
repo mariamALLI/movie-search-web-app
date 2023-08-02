@@ -84,14 +84,17 @@ let getMovieData = async ()=> {
              <div class="movie_list_txt">
                     <div class="first_txt_flx">
                         <h2 class="movie-title">${filmTitle}</h2>
-                        <span class="movie-rating">⭐${filmRating}</span>
+                        <span class="movie-rating">⭐ ${filmRating}</span>
                     </div>
             
                     <div class="minandgenre-flex">
                         <h3 class="runtime">${filmYear}</h3>
-                        <h3 class="runtime">${filmActors}</h3>
                         <h3 class="runtime">${filmRuntime}</h3>
                         <h3 class="genre">${filmGenre}</h3>
+                    </div>
+
+                    <div class="actors">
+                        <h3 class="runtime">${filmActors}</h3>
                         <div class="watchlistbtn">
                             <img src="images/addbtn.png" alt="" class="addbtn" id="addbtn" data-number=${filmId}>
                             <h3 class="watchlist">watchlist</h3>

@@ -12,7 +12,7 @@ const addToWatchListsArray = JSON.parse(localStorage.getItem("addToWatchListArra
 if(addToWatchListsArray === null){
     console.log('empty')
 }else if(addToWatchListsArray.length !== 0){
-   
+    
     watchListTxt.style.display = 'none'
     for (let i = 0; i < addToWatchListsArray.length; i++){
         for(let x = 0; x < filmsArray.length; x++){
@@ -28,24 +28,27 @@ if(addToWatchListsArray === null){
                 const filmPlot = filmsArray[indx].plot
                 const filmActors = filmsArray[indx].actor
 
-
+                
                 watchlistContainer.innerHTML += `
                 <div class="movie_list_flex" id="film-list" data-film-id=${filmId}>
                 <img src="${filmPoster}" alt="film poster" class="movie-poster">
              <div class="movie_list_txt">
                     <div class="first_txt_flx">
                         <h2 class="movie-title">${filmTitle}</h2>
-                        <span class="movie-rating">⭐${filmRating}</span>
+                        <span class="movie-rating">⭐ ${filmRating}</span>
                     </div>
             
                     <div class="minandgenre-flex">
                         <h3 class="runtime">${filmYear}</h3>
-                        <h3 class="runtime">${filmActors}</h3>
                         <h3 class="runtime">${filmRuntime}</h3>
                         <h3 class="genre">${filmGenre}</h3>
+                     </div>
+                
+                    <div class="actors">
+                        <h3 class="runtime">${filmActors}</h3>
                         <div class="watchlistbtn">
-                            <img src="images/removebtn.png" alt="remove button" class="removebtn" id="removebtn" data-numbers= ${filmId}>
-                            <h3 class="watchlist">Remove</h3>
+                        <img src="images/removebtn.png" alt="remove button" class="removebtn" id="removebtn" data-numbers= ${filmId}>
+                        <h3 class="watchlist">Remove</h3>
                         </div>
                     </div>
 
