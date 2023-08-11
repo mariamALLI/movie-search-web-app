@@ -135,6 +135,7 @@ main {
 
 .movie-poster {
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .movie_container,
@@ -237,6 +238,10 @@ main {
         display: flex;
     }
 
+    .movie_container {
+        margin-top: 2rem;
+    }
+
     .movie-poster {
         width: 35%;
         margin-bottom: 2rem;
@@ -245,8 +250,9 @@ main {
     .first_txt_flx {
         display: flex;
         align-items: center;
-        margin-left: 1.3rem;
+        margin-left: 0.3rem;
         gap: 15px;
+        flex-wrap: wrap;
     }
 
     .movie-title {
@@ -256,7 +262,7 @@ main {
     .minandgenre-flex {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin-top: 1rem;
     }
 
@@ -267,6 +273,7 @@ main {
 
     .actors {
         margin-top: 0.5rem;
+        text-align: left;
     }
 
     .actors.runtime {
@@ -275,7 +282,7 @@ main {
 
     .watchlistbtn {
         margin-top: 0.7rem;
-        margin-left: 0rem;
+        margin-left: -17rem;
     }
 
     .plot {
