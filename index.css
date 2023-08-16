@@ -7,7 +7,7 @@
 
 body {
     background: #1C1C1C;
-    color: #fff;
+    color: #CC9200;
 }
 
 .container {
@@ -38,6 +38,12 @@ header {
 .movie_link a {
     color: #fff;
     text-decoration: none;
+    color: #CC9200;
+}
+
+.movie_link a:hover {
+    color: #A5A5A5;
+    /* font-size: ; */
 }
 
 .header-flex,
@@ -59,8 +65,8 @@ header {
     border-radius: 15px;
     color: #A5A5A5;
     background: #2E2E2F;
-    /* shadow/sm */
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: #CC9200;
 }
 
 .search {
@@ -79,7 +85,9 @@ header {
     cursor: pointer;
     border: none;
     background-color: #4B4B4B;
-    color: #fff;
+    color: #d4af40;
+    text-shadow: 5px 5px 5px #000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 main {
@@ -119,6 +127,17 @@ main {
     left: 2rem;
 }
 
+.actors .runtime {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.minandgenre-flex .runtime,
+.minandgenre-flex .genre {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
 .addmoviebtntxt {
     display: flex;
     align-items: center;
@@ -138,6 +157,12 @@ main {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.first_txt_flx .movie-title {
+    font-weight: 700;
+    color: #FFC533;
+    margin-top: 1rem;
+}
+
 .movie_container,
 .movie_list_txt {
     text-align: center;
@@ -150,6 +175,10 @@ main {
     gap: 10px;
 }
 
+.watchlist {
+    font-weight: 200;
+}
+
 .movie_list_flex {
     border-bottom: 2px solid #4B4B4B;
     margin-bottom: 30px;
@@ -157,6 +186,18 @@ main {
 
 .plot {
     margin-bottom: 20px;
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+
+.addbtn,
+.removebtn {
+    cursor: pointer;
+}
+
+.header-flex h1, 
+.watchlist_flex h1 {
+    text-shadow: 5px 5px 5px #000;
 }
 
 
@@ -204,18 +245,29 @@ main {
         padding: 0.8rem;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
+        border: 1px solid #CC9200;
+        border-right: none;
     }
 
     .search-btn {
-        padding: 0.75rem 2.3rem;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
+        padding: 0.8rem 2.3rem;
+        border-radius: 0px;
         margin-top: 8px;
+        border: 1px solid #CC9200;
+        border-left: none;
+        border-right: none;
+        box-shadow: none;
+    }
+
+    .search-btn:hover {
+        color: #A5A5A5;
+        text-shadow: 5px 5px 5px #000;
     }
 
     #refresh_btn {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-right: 1px solid #CC9200;;
     }
 
     .film-tape-icon {
@@ -229,9 +281,14 @@ main {
         top: 33rem;
     }
 
+    .first_txt_flx .movie-title {
+       margin-top: 0;
+    }
+
     .movie_link a {
         font-size: 1.2em;
         font-weight: 500;
+        text-shadow: 5px 5px 5px #000;
     }
 
     .movie_list_flex {
@@ -255,10 +312,6 @@ main {
         flex-wrap: wrap;
     }
 
-    .movie-title {
-        font-weight: 600;
-    }
-
     .minandgenre-flex {
         display: flex;
         align-items: center;
@@ -266,8 +319,7 @@ main {
         margin-top: 1rem;
     }
 
-    .minandgenre-flex h3,
-    .watchlist{
+    .minandgenre-flex h3 {
         font-weight: 200;
     }
 
