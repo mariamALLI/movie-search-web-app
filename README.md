@@ -4,4 +4,4 @@
 - live site url: [Netlify](https://cheerful-starburst-0f64ce.netlify.app/watchlist)
 
 # ScreenShot
-![Screen Shot]()
+![Screen Shot](images/moviescreen.png)
